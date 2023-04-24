@@ -6,7 +6,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 
 COLOUR1 = "#0009cf"
-COLOUR2 = "#263238"
+COLOUR2 = "#3307ff"
 COLOUR3 = "#000000"
 
 
@@ -58,7 +58,7 @@ keys = [
     Key([mod], "t", lazy.spawn("telegram-desktop")),
     Key([mod], "g", lazy.spawn("gajim")),
     Key([mod], "o", lazy.spawn("okular")),
-    #Key([mod], "b", bar.Bar.show(is_show=False)),
+    Key([mod], "Print", lazy.spawn("flameshot")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -204,9 +204,9 @@ screens = [
             
             24,
             border_width=[5, 50, 5, 50],
-            border_color=["263238", "263238", "263238", "263238"],
+            border_color=["3307ff", "3307ff", "3307ff", "3307ff"],
             margin=5,
-            background="#263238",
+            background= "#3307ff",
             #opacity='0,9'
         ),
     ),
@@ -235,7 +235,7 @@ floating_layout = layout.Floating(
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),
         Match(wm_class="telegram-desktop"),
-        Match(wm_class="gajim"),
+        Match(wm_class="Gajim"),
     ]
 )
 auto_fullscreen = True
@@ -250,3 +250,4 @@ auto_minimize = True
 wl_input_rules = None
 
 wmname = "LG3D"
+
