@@ -62,7 +62,17 @@ screens = [
                        padding = 0,
                        fontsize = 28,
                        foreground='#2f343f'
-                       ),    
+                       ),
+                widget.Battery(
+                    foreground = "#44ff44",
+                    low_foreground = "#ff4444",
+                    charge_char = "POW",
+                    discharge_char = "DIS",
+                    empty_char = "LOW",
+                    full_char = "FULL",
+                    format = '[{char} {percent:2.0%}]',
+                    notify_bellow = 0.25,
+                    low_percentage = 0.25),
                 widget.Clock(format=' %Y-%m-%d %a %I:%M %p',
                              background="#2f343f",
                              foreground='#9bd689'),
