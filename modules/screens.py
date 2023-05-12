@@ -33,36 +33,8 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.CurrentLayoutIcon(scale=0.75),
-                widget.CheckUpdates(
-                    update_interval=1800,
-                    distro="Arch_yay",
-                    display_format="{updates} Updates",
-                    foreground="#ffffff",
-                    mouse_callbacks={
-                        'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
-                    },
-                    background="#2f343f"),
                 widget.Systray(icon_size = 20),
-                widget.TextBox(
-                       text = '',
-                       padding = 0,
-                       fontsize = 28,
-                       foreground='#2f343f'
-                       ), 
                 volume,
-                widget.TextBox(                                                                    
-                       text = '',
-                       padding = 0,
-                       fontsize = 28,
-                       foreground='#2f343f',
-                       ),   
-                widget.TextBox(
-                       text = '',
-                       padding = 0,
-                       fontsize = 28,
-                       foreground='#2f343f'
-                       ),
                 widget.Battery(
                     foreground = "#44ff44",
                     low_foreground = "#ff4444",
@@ -76,13 +48,7 @@ screens = [
                 widget.Clock(format=' %Y-%m-%d %a %I:%M %p',
                              background="#2f343f",
                              foreground='#9bd689'),
-                                                widget.TextBox(                                                
                                                 
-                       text = '',
-                       padding = 0,
-                       fontsize = 28,
-                       foreground='#2f343f',
-                       ),   
                 widget.TextBox(
                     text='',
                     mouse_callbacks= {
