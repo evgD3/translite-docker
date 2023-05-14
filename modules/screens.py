@@ -38,15 +38,16 @@ screens = [
                 widget.Battery(
                     foreground = "#44ff44",
                     low_foreground = "#ff4444",
-                    charge_char = "POW",
-                    discharge_char = "DIS",
-                    empty_char = "LOW",
-                    full_char = "FULL",
+                    charge_char = "󰚥",
+                    discharge_char = "󰂆",
+                    empty_char = "󰢟",
+                    full_char = "󰂅",
                     format = '[{char} {percent:2.0%}]',
                     notify_bellow = 0.25,
-                    low_percentage = 0.25),
-                widget.Clock(format=' %Y-%m-%d %a %I:%M %p',
-                             background="#2f343f",
+                    low_percentage = 0.25,
+                    fontsize=18,
+                    font='Font Awesome 5 Free',),
+                widget.Clock(format=' %d-%m %a %I:%M',
                              foreground='#9bd689'),
                                                 
                 widget.TextBox(
