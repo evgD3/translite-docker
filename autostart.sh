@@ -1,5 +1,5 @@
 #!/bin/sh
-wal -i /home/ejix/desktop/wallpapers-mb761ccn2nua1.jpg
+wal -i /home/ejix/desktop/wallpapers-xe1o1aikq5ta1.jpg 
 setxkbmap -option 'caps:super'
 picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 

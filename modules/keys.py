@@ -5,42 +5,25 @@ mod = "mod4"
 terminal = "kitty"
 
 keys = [
-    # Switch between windows
+    #move focus to 
     Key([mod], "h", lazy.layout.left(), desc="left"),
     Key([mod], "l", lazy.layout.right(), desc="right"),
     Key([mod], "j", lazy.layout.down(), desc="down"),
     Key([mod], "k", lazy.layout.up(), desc="up"),
     Key([mod], "space", lazy.layout.next(), desc="other window"),
+    
+    #move window to
+    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="left"),
+    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="right"),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="down"),
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="up"),
 
-    Key([mod], "r", lazy.spawn("rofi -show combi"), desc="spawn rofi"),
-
-    # Move windows between left/right columns or move up/down in current stack.
-    # Moving out of range in Columns layout will create new column.
-    Key([mod, "shift"],
-        "h",
-        lazy.layout.shuffle_left(),
-        desc="Move window to the left"),
-    Key([mod, "shift"],
-        "l",
-        lazy.layout.shuffle_right(),
-        desc="Move window to the right"),
-    Key([mod, "shift"],
-        "j",
-        lazy.layout.shuffle_down(),
-        desc="Move window down"),
-    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
-
-    # Grow windows. If current window is on the edge of screen and direction
-    # will be to screen edge - window would shrink.
-    Key([mod, "control"],
-        "h",
-        lazy.layout.grow(),
-        desc="Grow window"),
-    Key([mod, "control"],
-        "l",
-        lazy.layout.shrink(),
-        desc="Shrink window"),
-    Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    #grow windows to 
+    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="left"),
+    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="right"),
+    Key([mod, "control"], "j", lazy.layout.grow_down(), desc="down"),
+    Key([mod, "control"], "k", lazy.layout.grow_up(), desc="up"),
+    Key([mod], "n", lazy.layout.normalize(), desc="Reset all sizes"),
 
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
