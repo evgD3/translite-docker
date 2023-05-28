@@ -2,7 +2,7 @@ from libqtile import layout
 from libqtile.config import Match
 
 COLOR1 = '#5294e2'
-COLOR2 = '#2c5380'
+COLOR2 = '#001625'
 
 layouts = [
     #layout.MonadTall(margin=8, border_focus=COLOR1,
