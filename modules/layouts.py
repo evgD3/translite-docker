@@ -5,8 +5,8 @@ COLOR1 = '#5294e2'
 COLOR2 = '#2c5380'
 
 layouts = [
-    layout.MonadTall(margin=8, border_focus=COLOR1,
-                     border_normal=COLOR2),
+    #layout.MonadTall(margin=8, border_focus=COLOR1,
+     #                border_normal=COLOR2),
     #layout.Columns(border_focus_stack='#d75f5f'),
     #layout.Max(),
     # Try more layouts by unleashing below layouts.
