@@ -52,6 +52,6 @@ volume = MyVolume(
     fontsize=23,
     font='Font Awesome 5 Free',
     foreground='#aac9df',
-    background='#16364d',
+    background='#001625',
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
 )

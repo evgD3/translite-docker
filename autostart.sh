@@ -1,7 +1,9 @@
 #!/bin/sh
-wal -i /home/ejix/desktop/emma-francis-vpHCfunwDrQ-unsplash.jpg
+wal -i /home/ejix/desktop/wallpapers-12hnsuja47da1.png
 setxkbmap -option 'caps:super'
-picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
+setxkbmap 'us,ru' -option 'grp:alt_shift_toggle'
+picom --config /home/ejix/.config/picom/picom.conf -b
+#picom & disown # --experimental-backends --vsync should prevent screen tearing on most setups if needed
 
 # Low battery notifier
 ~/.config/qtile/scripts/check_battery.sh & disown
