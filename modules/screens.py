@@ -1,5 +1,12 @@
 from libqtile import bar
 from .widgets import *
+
+from .colors import BACKGROUND
+from .colors import SECOND_BACKGROUND
+from .colors import FOREGROUN
+from .colors import BORDER
+from .colors import BORDER_ACTIVE
+
 from libqtile.config import Screen
 from modules.keys import terminal
 import os
@@ -7,22 +14,15 @@ import os
 screens = [
     Screen(
         top=bar.Bar(
-            [   widget.Sep(padding=3, linewidth=0, background="#16364d"),
-                widget.Image(filename='~/.config/qtile/eos-c.png', margin=3, background="#16364d", mouse_callbacks={'Button1': lambda: qtile.cmd_spawn("rofi -show combi")}),
-                widget.Sep(padding=4, linewidth=0, background="#16364d"), 
+            [   widget.Sep(padding=3, linewidth=0, background=BACKGROUND),
+                widget.Sep(padding=40, linewidth=0, background=BACKGROUND), 
                 widget.GroupBox(
-                                highlight_method='line',
-                                this_screen_border="#5294e2",
-                                this_current_screen_border="#5294e2",
+                                highlight_method='block',
+                                this_screen_border=BORDER_ACTIVE,
+                                this_current_screen_border=BORDER_ACTIVE,
                                 active="#ffffff",
                                 inactive="#848e96",
-                                background="#16364d"),
-                widget.TextBox(
-                       text = '',
-                       padding = 0,
-                       fontsize = 28,
-                       foreground='#16364d'
-                       ),    
+                                background=SECOND_BACKGROUND),
                 widget.Prompt(),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground='#99c0de',fmt='{}'),
@@ -32,7 +32,6 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.CurrentLayoutIcon(scale=0.75),
                 widget.Systray(icon_size = 20),
                 volume,
                 widget.Battery(
@@ -62,6 +61,6 @@ screens = [
                 widget.Spacer(length=12)
             ],
             30,  # height in px
-            background="#001625"  # background color
+            background=BACKGROUND  # background color
         ), ),
 ]

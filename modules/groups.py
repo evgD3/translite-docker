@@ -3,15 +3,15 @@ from libqtile.command import lazy
 from .keys import keys, mod
 
 groups = [                                                                 
-    Group("1", label = "1"),
-    Group("2", label = "2"),
-    Group("3", label = "3"),
-    Group("4", label = "4"),
-    Group("5", label = "5"),
-    Group("6", label = "6"),
-    Group("7", label = "7"),
-    Group("8", label = "8"),
-    Group("9", label = "9"),
+    Group("1", label = ""),
+    Group("2", label = "󱋒"),
+    Group("3", label = "󰖟"),
+    Group("4", label = "󱥸"),
+    Group("5", label = "󱥸"),
+    Group("6", label = "󱥸"),
+    Group("7", label = "󱥸"),
+    Group("8", label = "󱥸"),
+    Group("9", label = "󱥸"),
     Group("0", label = ""),
 ]
 

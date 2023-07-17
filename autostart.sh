@@ -1,5 +1,5 @@
 #!/bin/sh
-wal -i /home/ejix/desktop/wallpapers-12hnsuja47da1.png
+wal -i /home/ejix/Downloads/657065.png
 setxkbmap -option 'caps:super'
 setxkbmap 'us,ru' -option 'grp:alt_shift_toggle'
 picom --config /home/ejix/.config/picom/picom.conf -b
