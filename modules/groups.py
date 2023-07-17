@@ -9,10 +9,6 @@ groups = [
     Group("4", label = "󱥸"),
     Group("5", label = "󱥸"),
     Group("6", label = "󱥸"),
-    Group("7", label = "󱥸"),
-    Group("8", label = "󱥸"),
-    Group("9", label = "󱥸"),
-    Group("0", label = ""),
 ]
 
 for i in groups:

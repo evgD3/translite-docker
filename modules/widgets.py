@@ -1,6 +1,12 @@
 from libqtile import widget
 from libqtile import qtile
 
+from .colors import BACKGROUND
+from .colors import SECOND_BACKGROUND
+from .colors import FOREGROUN
+from .colors import BORDER
+from .colors import BORDER_ACTIVE
+
 colors = [
 	      ["#282c34", "#282c34"], # panel background
           ["#3d3f4b", "#434758"], # background for current screen tab
@@ -52,6 +58,6 @@ volume = MyVolume(
     fontsize=23,
     font='Font Awesome 5 Free',
     foreground='#aac9df',
-    background='#001625',
+    background=BACKGROUND,
     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("pavucontrol")}
 )
