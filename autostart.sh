@@ -1,5 +1,5 @@
 #!/bin/sh
-wal -i /home/ejix/Downloads/269246.jpg
+wal -i /home/ejix/Downloads/wallhaven-p9gl3j.jpg 
 setxkbmap -option 'caps:super'
 setxkbmap 'us,ru' -option 'grp:alt_shift_toggle'
 picom --config /home/ejix/.config/picom/picom.conf -b

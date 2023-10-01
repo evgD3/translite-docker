@@ -35,7 +35,7 @@ screens = [
                 widget.Systray(icon_size = 20),
                 volume,
                 widget.Battery(
-                    foreground = "#44ff44",
+                    foreground = BORDER,
                     low_foreground = "#ff4444",
                     charge_char = "󰚥",
                     discharge_char = "󰂆",
@@ -47,7 +47,7 @@ screens = [
                     fontsize=18,
                     font='Font Awesome 5 Free',),
                 widget.Clock(format=' %d-%m %a %I:%M',
-                             foreground='#9bd689'),
+                             foreground=BORDER),
                                                 
                 widget.TextBox(
                     text='',
@@ -55,7 +55,7 @@ screens = [
                         'Button1':
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
                     },
-                    foreground='#e39378'
+                    foreground=BORDER
                 ),
 
                 widget.Spacer(length=12)
