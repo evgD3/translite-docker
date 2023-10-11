@@ -46,11 +46,11 @@ screens = [
                     low_percentage = 0.25,
                     fontsize=18,
                     font='Font Awesome 5 Free',),
-                widget.Clock(format=' %d-%m %a %I:%M',
+                widget.Clock(format='  %d-%m %a %I:%M',
                              foreground=BORDER),
                                                 
                 widget.TextBox(
-                    text='',
+                    text=' ',
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
