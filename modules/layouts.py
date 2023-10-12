@@ -1,7 +1,7 @@
 from libqtile import layout
 from libqtile.config import Match
-from colors import BORDER_NORMAL
-from colors import BORDER_FOCUS
+from .colors import BORDER_NORMAL
+from .colors import BORDER_FOCUS
 
 layouts = [
    layout.Bsp(

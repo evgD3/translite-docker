@@ -1,8 +1,8 @@
 from libqtile import widget
 from libqtile import qtile
 
-from colors import BAR_FONT
-from colors import BAR_BACKGROUND
+from .colors import BAR_FONT
+from .colors import BAR_BACKGROUND
 
 colors = [
 	      ["#282c34", "#282c34"], # panel background
@@ -27,24 +27,24 @@ class MyVolume(widget.Volume):
         widget.Volume._configure(self, qtile, bar)
         self.volume = self.get_volume()
         if self.volume <= 0:
-            self.text = '󰸈'
+            self.text = '󰸈 '
         elif self.volume <= 15:
             self.text = ''
         elif self.volume < 50:
             self.text = ''
         else:
-            self.text = ''
+            self.text = ' '
         # drawing here crashes Wayland
 
     def _update_drawer(self, wob=False):
         if self.volume <= 0:
-            self.text = '󰸈'
+            self.text = '󰸈 '
         elif self.volume <= 15:
             self.text = ''
         elif self.volume < 50:
             self.text = ''
         else:
-            self.text = ''
+            self.text = ' '
         self.draw()
 
         if wob:

@@ -1,10 +1,10 @@
 from libqtile import bar
 from .widgets import *
 
-from colors import BAR_BACKGROUND
-from colors import BAR_FONT
-from colors import BAR_FONT_SECOND
-from colors import BORDER_FOCUS
+from .colors import BAR_BACKGROUND
+from .colors import BAR_FONT
+from .colors import BAR_FONT_SECOND
+from .colors import BORDER_FOCUS
 
 from libqtile.config import Screen
 from modules.keys import terminal
