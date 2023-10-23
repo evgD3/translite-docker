@@ -42,4 +42,12 @@ floating_layout = layout.Floating(
         Match(wm_class="telegram-desktop"),
         Match(wm_class="dino"),
     ]
+    #layout.Floating.defaults = [
+     #   *layout.Floating.defaults,
+     #   ("border_focus", BORDER_FOCUS, "bfc"),
+     #   ("border_normal", BORDER_NORMAL, "bnc"),
+     #   ("border_width", 1, "bw"),
+     #   ("max_border_width", 0, "bfm"),
+     #   ("fullscreen_border_width", 0, "fbw"),
+    #]
 )
