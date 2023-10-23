@@ -55,7 +55,7 @@ keys = [
     Key([mod], "f", lazy.spawn("firefox")),
     Key([mod], "p", lazy.spawn("keepassxc")),
     Key([mod], "t", lazy.spawn("telegram-desktop")),
-    Key([mod], "g", lazy.spawn("gajim")),
+    Key([mod], "g", lazy.spawn("dino")),
     Key([mod], "o", lazy.spawn("okular")),
     Key([mod], "Print", lazy.spawn("flameshot")),
     Key([mod], "r", lazy.spawn("rofi -show combi"), desc="spawn rofi"),

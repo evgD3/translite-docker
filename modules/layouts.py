@@ -40,6 +40,6 @@ floating_layout = layout.Floating(
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),
         Match(wm_class="telegram-desktop"),
-        Match(wm_class="Gajim"),
+        Match(wm_class="dino"),
     ]
 )
