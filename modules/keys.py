@@ -58,5 +58,6 @@ keys = [
     Key([mod], "g", lazy.spawn("dino")),
     Key([mod], "o", lazy.spawn("okular")),
     Key([mod], "Print", lazy.spawn("flameshot")),
+    Key([mod], "x", lazy.spawn("xsecurelock")),
     Key([mod], "r", lazy.spawn("rofi -show combi"), desc="spawn rofi"),
 ]

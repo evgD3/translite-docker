@@ -12,6 +12,8 @@ import os
 
 screens = [
     Screen(
+        height = 400,
+        width = 400,
         top=bar.Bar(
             [   widget.Sep(padding=3, linewidth=0, background=BAR_BACKGROUND),
                 widget.Sep(padding=40, linewidth=0, background=BAR_BACKGROUND), 
