@@ -1,5 +1,5 @@
 #!/bin/sh
-wal -i ~/Downloads/cpeg.jpg
+wal -i ~/wallpapers/wallhaven-8586my.png
 setxkbmap -option 'caps:super'
 setxkbmap 'us,ru' -option 'grp:alt_shift_toggle'
 picom --config /home/ejix/.config/picom/picom.conf -b
